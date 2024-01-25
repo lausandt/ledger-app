@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ledger-app"
+version = "0.1.0"
+description = ""
+authors = ["lausandt <laurens.sandt@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "*"
+uvicorn = "*"
+pydantic = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+httpx = "^0.26.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
